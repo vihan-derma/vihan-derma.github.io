@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+<title>Vihan Derma</title>
+<meta name="theme-color" content="#253B76">
+<link rel="manifest" href="manifest.json">
+<link rel="icon" href="icons/icon-32.png" sizes="32x32">
+<link rel="apple-touch-icon" href="icons/icon-180.png">
+<style>
+  :root{--p:#0f766e;--p-d:#115e59}
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%;background:linear-gradient(160deg,#162447 0%,#1d2f5c 55%,#253B76 100%);color:#ffffff;
+    font:15px/1.5 'Segoe UI',Roboto,system-ui,-apple-system,sans-serif}
+  .wrap{min-height:100%;display:flex;flex-direction:column;align-items:center;
+    justify-content:center;padding:24px;text-align:center;gap:14px}
+  .logo{width:84px;height:84px;border-radius:24px;background:#ffffff;display:grid;
+    place-items:center;box-shadow:0 14px 36px rgba(0,0,0,.35)}
+  .logo img{width:60px;height:auto;display:block}
+  h1{margin:4px 0 0;font-size:21px;font-weight:700;letter-spacing:.02em}
+  p{margin:0;color:rgba(255,255,255,.72);font-size:14px}
+  .spin{width:26px;height:26px;border-radius:50%;border:3px solid rgba(255,255,255,.28);
+    border-top-color:#ffffff;animation:sp 0.8s linear infinite;margin-top:6px}
+  @keyframes sp{to{transform:rotate(360deg)}}
+  a.fb{color:#ffffff;margin-top:10px;font-size:13px;text-decoration:underline;opacity:.9}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <div class="logo"><img src="icons/icon-512.png" alt="Vihan Derma"></div>
+  <h1>Vihan Derma</h1>
+  <p>Đang mở phần mềm quản lý phòng khám…</p>
+  <div class="spin"></div>
+  <a class="fb" id="fb" href="#" style="display:none">Nếu không tự chuyển, bấm vào đây</a>
+</div>
+<script>
+  /* Sửa đúng 1 dòng bên dưới: dán link ứng dụng web Apps Script
+     của anh vào giữa hai dấu ngoặc kép, dạng
+     https://script.google.com/macros/s/..................../exec */
+  var APP_URL = "DAN_LINK_PHAN_MEM_VAO_DAY";
+
+  document.getElementById('fb').href = APP_URL;
+  setTimeout(function () {
+    try { location.replace(APP_URL); }
+    catch (e) { document.getElementById('fb').style.display = 'inline'; }
+  }, 450);
+  setTimeout(function () {
+    document.getElementById('fb').style.display = 'inline';
+  }, 2500);
+</script>
+</body>
+</html>
