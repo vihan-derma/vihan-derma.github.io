@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="vi" data-trang="khach">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="robots" content="noindex, nofollow">
+<meta name="referrer" content="no-referrer">
+<meta name="theme-color" content="#214190">
+<title>Vihan Derma · Khai báo khách hàng mới</title>
+<style>
+:root{--xanh:#214190;--xanh2:#3a5bb8;--nen:#f3f5fa;--chu:#1b2233;--nhat:#5d6a85;--vien:#d5dbe8;--do:#c62828;--do-nen:#fdecec;--cam:#b45309;--xanh-nhat:#e9eefb;--bo:14px}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--nen);color:var(--chu);font:16px/1.45 system-ui,-apple-system,"Segoe UI",Roboto,"Noto Sans","Helvetica Neue",Arial,"Apple SD Gothic Neo","Malgun Gothic","PingFang SC","Hiragino Sans","Microsoft YaHei",sans-serif;-webkit-text-size-adjust:100%}
+button,input,select,textarea{font:inherit;color:inherit}
+.dau{position:sticky;top:0;z-index:5;background:#fff;border-bottom:1px solid var(--vien);padding:8px 14px calc(8px);display:flex;align-items:center;gap:10px}
+.dau img{height:34px;width:auto}
+.dau .ten{font-weight:700;color:var(--xanh);letter-spacing:.04em;font-size:14px;line-height:1.15}
+.dau .ten small{display:block;font-weight:500;color:var(--nhat);letter-spacing:0;font-size:11px}
+.nn{margin-left:auto;display:flex;align-items:center;gap:6px;font-size:13px;color:var(--nhat)}
+.nn select{border:1px solid var(--vien);border-radius:999px;padding:6px 28px 6px 10px;background:#fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='6'%3E%3Cpath d='M0 0l5 6 5-6z' fill='%23214190'/%3E%3C/svg%3E") no-repeat right 10px center;appearance:none;-webkit-appearance:none;font-size:14px;color:var(--xanh);font-weight:600;max-width:150px}
+.tien{height:4px;background:var(--vien)}
+.tien i{display:block;height:4px;background:var(--xanh);transition:width .3s}
+main{max-width:600px;margin:0 auto;padding:14px 14px 120px}
+.the{background:#fff;border-radius:var(--bo);padding:18px 16px;box-shadow:0 1px 2px rgba(20,30,60,.06);margin-bottom:14px}
+h1{font-size:20px;margin:0 0 2px;color:var(--xanh);line-height:1.25}
+h2{font-size:15px;margin:0 0 12px;color:var(--xanh);letter-spacing:.02em;line-height:1.3;padding-bottom:8px;border-bottom:2px solid var(--xanh-nhat)}
+.v{display:block}
+.e{display:block;font-style:italic;color:var(--nhat);font-size:.86em;font-weight:400}
+h1 .e,h2 .e{font-size:.8em}
+.buoc{font-size:13px;color:var(--nhat);margin:0 0 10px}
+.o{margin:0 0 16px}
+.o>label,.o>.nhan{display:block;font-weight:600;margin-bottom:6px;font-size:15px}
+.o>label .e,.o>.nhan .e{font-weight:400}
+.bb{color:var(--do);font-weight:700}
+.goi{font-size:13px;color:var(--nhat);margin:4px 0 0}
+.goi .e{font-size:1em}
+input[type=text],input[type=tel],input[type=email],input[type=number],select.in,textarea{width:100%;border:1.5px solid var(--vien);border-radius:10px;padding:11px 12px;background:#fff;font-size:16px;outline:none;transition:border-color .15s}
+textarea{min-height:84px;resize:vertical}
+input:focus,select.in:focus,textarea:focus{border-color:var(--xanh2);box-shadow:0 0 0 3px rgba(58,91,184,.15)}
+.sai input,.sai select.in,.sai textarea,.sai .chips{border-color:var(--do)!important}
+.sai .chips{border:1.5px solid;border-radius:12px;padding:6px}
+.loi{display:none;color:var(--do);font-size:13px;margin-top:5px}
+.sai .loi{display:block}
+.ngay3{display:grid;grid-template-columns:1fr 1.2fr 1.3fr;gap:8px}
+.chips{display:flex;flex-wrap:wrap;gap:8px}
+.chip{position:relative;display:flex;align-items:flex-start;gap:8px;border:1.5px solid var(--vien);border-radius:12px;padding:9px 11px;background:#fff;cursor:pointer;min-height:46px;flex:1 1 calc(50% - 8px);font-size:14.5px;line-height:1.3;user-select:none;-webkit-tap-highlight-color:transparent}
+.chip input{position:absolute;opacity:0;pointer-events:none}
+.chip .h{flex:0 0 20px;height:20px;border:2px solid #9aa6c2;border-radius:5px;margin-top:1px;display:flex;align-items:center;justify-content:center;background:#fff}
+.chip.tron .h{border-radius:50%}
+.chip.chon{border-color:var(--xanh);background:var(--xanh-nhat)}
+.chip.chon .h{background:var(--xanh);border-color:var(--xanh)}
+.chip.chon .h:after{content:"";width:9px;height:5px;border:2.5px solid #fff;border-top:0;border-right:0;transform:rotate(-45deg) translate(1px,-1px)}
+.chip.tron.chon .h:after{width:8px;height:8px;border:0;border-radius:50%;background:#fff;transform:none}
+.chip.khong{flex-basis:100%;border-style:dashed}
+.chip .e{font-size:.88em}
+.phu{margin-top:8px}
+.bao{border-radius:12px;padding:10px 12px;font-size:14px;margin:0 0 14px;background:var(--xanh-nhat);color:#21325e}
+.bao.do{background:var(--do-nen);color:#8a1c1c}
+.bao .e{color:inherit;opacity:.85}
+.chan{position:fixed;left:0;right:0;bottom:0;z-index:6;background:rgba(255,255,255,.96);backdrop-filter:blur(6px);border-top:1px solid var(--vien);padding:10px 14px calc(10px + env(safe-area-inset-bottom))}
+.chan .tr{max-width:600px;margin:0 auto;display:flex;gap:10px}
+.nut{border:0;border-radius:12px;padding:12px 16px;font-weight:700;cursor:pointer;min-height:52px;line-height:1.2;display:inline-flex;flex-direction:column;align-items:center;justify-content:center;text-align:center}
+.nut .e{font-size:12px;color:inherit;opacity:.85;font-weight:500}
+.nut.chinh{background:var(--xanh);color:#fff;flex:1}
+.nut.chinh:disabled{opacity:.55}
+.nut.phu2{background:#fff;color:var(--xanh);border:1.5px solid var(--vien);flex:0 0 32%}
+.nut.nho{min-height:0;padding:6px 12px;font-size:13px;border:1px solid var(--vien);background:#fff;color:var(--xanh);border-radius:999px}
+.xl .muc{border-top:1px solid #eef1f7;padding:9px 0;display:grid;grid-template-columns:42% 1fr;gap:10px;font-size:14px}
+.xl .muc:first-of-type{border-top:0}
+.xl .muc .k{color:var(--nhat)}
+.xl .muc .k .e{font-size:.9em}
+.xl .dauxl{display:flex;justify-content:space-between;align-items:flex-start;gap:8px}
+.dy{display:flex;gap:10px;padding:12px;border:1.5px solid var(--vien);border-radius:12px;margin-bottom:10px;cursor:pointer;font-size:14px}
+.dy.chon{border-color:var(--xanh);background:var(--xanh-nhat)}
+.dy .h{flex:0 0 22px;height:22px;border:2px solid #9aa6c2;border-radius:5px;margin-top:2px;display:flex;align-items:center;justify-content:center;background:#fff}
+.dy.chon .h{background:var(--xanh);border-color:var(--xanh)}
+.dy.chon .h:after{content:"";width:10px;height:5px;border:2.5px solid #fff;border-top:0;border-right:0;transform:rotate(-45deg) translate(1px,-1px)}
+.dy .e{margin-top:4px}
+.ky{margin-bottom:18px}
+.khung{position:relative;border:2px dashed #9aa6c2;border-radius:12px;background:#fff;height:190px;touch-action:none}
+.khung canvas{position:absolute;inset:0;width:100%;height:100%;border-radius:12px;touch-action:none}
+.khung .gach{position:absolute;left:18px;right:18px;bottom:44px;border-bottom:1px solid #c9d0e0;pointer-events:none}
+.khung .x{position:absolute;left:18px;bottom:48px;color:#9aa6c2;font-size:20px;pointer-events:none}
+.ky .dong{display:flex;justify-content:space-between;align-items:center;margin-bottom:6px;gap:8px}
+.ky.sai .khung{border-color:var(--do)}
+.ma{font-size:44px;font-weight:800;letter-spacing:.08em;color:var(--xanh);text-align:center;margin:10px 0;font-variant-numeric:tabular-nums}
+.giua{text-align:center}
+.logo-to{display:block;margin:6px auto 12px;width:150px;height:auto}
+.an{position:absolute;left:-9999px;width:1px;height:1px;overflow:hidden}
+.quay{display:inline-block;width:26px;height:26px;border:3px solid var(--xanh-nhat);border-top-color:var(--xanh);border-radius:50%;animation:q 0.9s linear infinite}
+@keyframes q{to{transform:rotate(360deg)}}
+.ngaykyl{text-align:right;font-size:14px;color:var(--nhat);margin:10px 0 16px;line-height:1.5}
+@media (min-width:520px){.chip{flex-basis:calc(33.3% - 8px)}}
+</style>
+</head>
+<body>
+<div class="dau">
+  <img src="data:image/png;base64,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" alt="Vihan Derma">
+  <div class="ten">VIHAN DERMA<small>International Clinic</small></div>
+  <div class="nn" id="oNN"></div>
+</div>
+<div class="tien"><i id="tien" style="width:0"></i></div>
+<main id="noi"><div class="the giua"><span class="quay"></span></div></main>
+<div class="chan" id="chan" hidden><div class="tr" id="chanTr"></div></div>
+<input class="an" id="hp" name="kb_bay" tabindex="-1" autocomplete="off" aria-hidden="true">
+<script>
+// CHỈ SỬA DÒNG DƯỚI: dán đường dẫn Web App (kết thúc bằng /exec) vào giữa hai dấu nháy.
+var KB_MAY_CHU = 'https://script.google.com/macros/s/AKfycbye0G6tYl3ivISjelKP4GryeUsTqAAbslKPgvI9xz6MqlYTbI87M_vbH7uH6z4A-OoItA/exec';
+var LOGO = document.querySelector('.dau img').src;
+var QT_DS = 'VN RU CN KR KZ TW JP US AU IN TH GB DE FR IL HK SG MY ID PH UA BY UZ KG CA NZ AF AL DZ AD AO AR AM AT AZ BS BH BD BB BE BZ BJ BT BO BA BW BR BN BG BF BI CV KH CM CF TD CL CO KM CG CD CR CI HR CU CY CZ DK DJ DM DO EC EG SV GQ ER EE SZ ET FJ FI GA GM GE GH GR GD GT GN GW GY HT HN HU IS IR IQ IE IT JM JO KE KI KP KW LA LV LB LS LR LY LI LT LU MO MG MW MV ML MT MH MR MU MX FM MD MC MN ME MA MZ MM NA NR NP NL NI NE NG MK NO OM PK PW PS PA PG PY PE PL PT PR QA RO RW KN LC VC WS SM ST SA SN RS SC SL SK SI SB SO ZA SS ES LK SD SR SE CH SY TJ TZ TL TG TO TT TN TR TM TV UG AE UY VU VA VE YE ZM ZW XK'.split(' ');
+var QT_DAU = 12;
+var S = { loiLon: '', loiGui: '', td: null, nn: 'en', nnNguon: 'mac_dinh', nnTay: false, buoc: 0, F: null, loi: {}, id: '', bd: 0, ky: {}, ma: '', dangGui: false, mau: '', qtNN: {}, t: '' };
+var NN = ['vi', 'en', 'ko', 'ru', 'zh', 'zht', 'ja'];
+var INTL = { vi: 'vi', en: 'en', ko: 'ko', ru: 'ru', zh: 'zh-Hans', zht: 'zh-Hant', ja: 'ja' };
+var KHOA_NHAP = 'kb_nhap_v1';
+function $(id) { return document.getElementById(id); }
+function E(s) { return String(s == null ? '' : s).replace(/[&<>"']/g, function (c) { return { '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' }[c]; }); }
+function tx(k, nn) { var x = S.td.t[k]; return x ? x[NN.indexOf(nn)] : k; }
+function LB(k, bb) { var v = tx(k, 'vi'), e = tx(k, S.nn); return '<span class="v">' + E(v) + (bb ? ' <span class="bb">*</span>' : '') + '</span>' + (e && e !== v ? '<span class="e">' + E(e) + '</span>' : ''); }
+function L(k, lop) { var v = tx(k, 'vi'), e = tx(k, S.nn); return '<span class="v' + (lop ? ' ' + lop : '') + '">' + E(v) + '</span>' + (e && e !== v ? '<span class="e">' + E(e) + '</span>' : ''); }
+function LD(nhom, ma) { var x = S.td.ds[nhom].filter(function (r) { return r[0] === ma; })[0]; if (!x) return E(ma); var v = x[1][0], e = x[1][NN.indexOf(S.nn)]; return '<span class="v">' + E(v) + '</span>' + (e && e !== v ? '<span class="e">' + E(e) + '</span>' : ''); }
+function tenQT(ma, nn) { try { return new Intl.DisplayNames([INTL[nn] || nn], { type: 'region' }).of(ma) || ma; } catch (e) { return ma; } }
+function moiF() {
+  return { hoTen: '', gioiTinh: '', ngaySinh: '', quocTich: '', tenQT: '', sdt: '', diaChi: '', queQuan: '', giayTo: '', email: '', ngheNghiep: '', luuTru: '', lyDo: '',
+    nguon: [], nguonKhac: '', ddTen: '', ddQuanHe: '', ddSdt: '', he: [], heKhac: '', da: [], daKhac: '', nu: [], thaiTuan: '', tt: [], ttKhac: '', ttChiTiet: '',
+    du: [], duKhac: '', duChiTiet: '', thuoc: '', thuocKhong: false, t6: [], them: '', themChiTiet: '', dy: [], ns: { d: '', m: '', y: '' } };
+}
+function nnDienThoai() {
+  var ds = (navigator.languages && navigator.languages.length ? navigator.languages : [navigator.language || '']);
+  for (var i = 0; i < ds.length; i++) {
+    var l = String(ds[i]).toLowerCase();
+    if (!l || l.indexOf('vi') === 0) continue;
+    if (l.indexOf('ru') === 0) return 'ru';
+    if (l.indexOf('ko') === 0) return 'ko';
+    if (l.indexOf('ja') === 0) return 'ja';
+    if (/^zh-(tw|hk|mo)|^zh-hant/.test(l)) return 'zht';
+    if (l.indexOf('zh') === 0) return 'zh';
+    return 'en';
+  }
+  return null;
+}
+function chonNN() {
+  if (S.nnTay) return;
+  var qt = S.F && S.F.quocTich;
+  if (qt && qt !== 'VN') { S.nn = S.qtNN[qt] || 'en'; S.nnNguon = 'quoc_tich'; return; }
+  var d = nnDienThoai();
+  if (d) { S.nn = d; S.nnNguon = 'dien_thoai'; return; }
+  S.nn = 'en'; S.nnNguon = 'mac_dinh';
+}
+function veNN() {
+  var h = '<span>VI +</span><select id="chonNN" aria-label="Second language">';
+  NN.slice(1).forEach(function (n) { h += '<option value="' + n + '"' + (n === S.nn ? ' selected' : '') + '>' + E(S.td.tenNN[n]) + '</option>'; });
+  $('oNN').innerHTML = h + '</select>';
+  $('chonNN').onchange = function () {
+    S.nn = this.value; S.nnTay = true; S.nnNguon = 'tay';
+    if (S.ma) return veXong();
+    if (S.loiLon) return veLoiLon(S.loiLon);
+    if (!S.F || S.buoc < 0) return veChao();
+    luuNhap(); giuCuon(ve);
+  };
+}
+function goiMayChu(b) {
+  var ctl = window.AbortController ? new AbortController() : null;
+  var hen = setTimeout(function () { if (ctl) ctl.abort(); }, 45000);
+  return fetch(KB_MAY_CHU, { method: 'POST', body: JSON.stringify(b), headers: { 'Content-Type': 'text/plain;charset=utf-8' }, redirect: 'follow', signal: ctl ? ctl.signal : undefined })
+    .then(function (r) { clearTimeout(hen); if (!r.ok) throw new Error('http ' + r.status); return r.json(); });
+}
+function maNgauNhien() {
+  var a = new Uint8Array(12);
+  (window.crypto || window.msCrypto).getRandomValues(a);
+  return Array.prototype.map.call(a, function (x) { return ('0' + x.toString(16)).slice(-2); }).join('');
+}
+function docNhap() {
+  try {
+    var x = JSON.parse(localStorage.getItem(KHOA_NHAP) || 'null');
+    if (!x || Date.now() - x.luc > 3 * 3600000 || x.mau !== S.mau) return null;
+    return x;
+  } catch (e) { return null; }
+}
+function luuNhap() {
+  if (!S.F || S.ma) return;
+  try { localStorage.setItem(KHOA_NHAP, JSON.stringify({ F: S.F, buoc: S.buoc, luc: Date.now(), id: S.id, bd: S.bd, nn: S.nn, nnTay: S.nnTay, nnNguon: S.nnNguon, mau: S.mau })); } catch (e) { }
+}
+function xoaNhap() { try { localStorage.removeItem(KHOA_NHAP); } catch (e) { } }
+function homNay() { var d = new Date(Date.now() + 7 * 3600000); return d.toISOString().slice(0, 10); }
+function tuoi() {
+  var ns = S.F.ngaySinh, h = homNay();
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(ns)) return null;
+  var t = +h.slice(0, 4) - +ns.slice(0, 4);
+  if (h.slice(5) < ns.slice(5)) t--;
+  return t;
+}
+function duoi16() { var t = tuoi(); return t != null && t < 16; }
+function sdtHop(v) { var s = String(v).replace(/[\s.\-()]/g, ''); if (/^00/.test(s)) s = '+' + s.slice(2); return /^\+?\d{6,15}$/.test(s); }
+var BUOC = ['kh', 'dd', 'yt1', 'yt2', 'xem', 'ky'];
+function ve() {
+  var b = S.buoc;
+  $('tien').style.width = (b < 0 ? 0 : Math.min(100, (b + 1) / BUOC.length * 100)) + '%';
+  var h = '';
+  if (b >= 0 && b < 4) h += '<p class="buoc">' + E(tx('buoc', 'vi')) + ' ' + (b + 1) + '/6 · <i>' + E(tx('buoc', S.nn)) + ' ' + (b + 1) + '/6</i></p>';
+  if (BUOC[b] === 'kh') h += veKH();
+  else if (BUOC[b] === 'dd') h += veDD();
+  else if (BUOC[b] === 'yt1') h += veYT1();
+  else if (BUOC[b] === 'yt2') h += veYT2();
+  else if (BUOC[b] === 'xem') h += veXem();
+  else if (BUOC[b] === 'ky') h += veKy();
+  $('noi').innerHTML = h;
+  ganSuKien();
+  veChan();
+  if (BUOC[b] === 'ky') ganKy();
+}
+function veChan() {
+  var b = S.buoc, h = '';
+  if (b < 0 || S.ma) { $('chan').hidden = true; return; }
+  $('chan').hidden = false;
+  h += '<button class="nut phu2" id="nLui">' + L('lui') + '</button>';
+  if (BUOC[b] === 'xem') h += '<button class="nut chinh" id="nTiep">' + L('xacNhanXong') + '</button>';
+  else if (BUOC[b] === 'ky') h += '<button class="nut chinh" id="nTiep"' + (S.dangGui ? ' disabled' : '') + '>' + (S.dangGui ? L('dangGui') : L('gui')) + '</button>';
+  else h += '<button class="nut chinh" id="nTiep">' + L('tiep') + '</button>';
+  $('chanTr').innerHTML = h;
+  $('nLui').onclick = function () { if (S.buoc === 0) { S.buoc = -1; veChao(); } else { S.buoc--; S.loi = {}; luuNhap(); ve(); window.scrollTo(0, 0); } };
+  $('nTiep').onclick = tiep;
+}
+function oChu(k, nhan, tuy) {
+  tuy = tuy || {};
+  var kieu = tuy.kieu || 'text';
+  var h = '<div class="o' + (S.loi[k] ? ' sai' : '') + '" id="o_' + k + '"><label for="i_' + k + '">' + LB(nhan, tuy.bb) + '</label>';
+  if (kieu === 'area') h += '<textarea id="i_' + k + '" data-k="' + k + '" maxlength="' + (tuy.max || 1000) + '">' + E(S.F[k]) + '</textarea>';
+  else h += '<input id="i_' + k + '" data-k="' + k + '" type="' + kieu + '" maxlength="' + (tuy.max || 200) + '" value="' + E(S.F[k]) + '"' + (tuy.ac ? ' autocomplete="' + tuy.ac + '"' : '') + (tuy.im ? ' inputmode="' + tuy.im + '"' : '') + '>';
+  if (tuy.goi) h += '<p class="goi">' + L(tuy.goi) + '</p>';
+  return h + '<div class="loi">' + L(S.loi[k] || 'chuaDien') + '</div></div>';
+}
+function oChip(k, nhom, tuy) {
+  tuy = tuy || {};
+  var chon = S.F[k] || [];
+  var h = '<div class="o' + (S.loi[k] ? ' sai' : '') + '" id="o_' + k + '">';
+  if (tuy.nhan) h += '<div class="nhan">' + LB(tuy.nhan, tuy.bb !== false) + '</div>';
+  h += '<div class="chips">';
+  S.td.ds[nhom].forEach(function (r) {
+    var c = chon.indexOf(r[0]) >= 0;
+    h += '<label class="chip' + (c ? ' chon' : '') + '"><input type="checkbox" data-ds="' + k + '" value="' + r[0] + '"' + (c ? ' checked' : '') + '><span class="h"></span><span>' + LD(nhom, r[0]) + '</span></label>';
+  });
+  if (tuy.khac) {
+    var ck = chon.indexOf('khac') >= 0;
+    h += '<label class="chip' + (ck ? ' chon' : '') + '"><input type="checkbox" data-ds="' + k + '" value="khac"' + (ck ? ' checked' : '') + '><span class="h"></span><span>' + L('khac') + '</span></label>';
+  }
+  if (tuy.khong) {
+    var cn = chon.indexOf('khong') >= 0;
+    h += '<label class="chip khong' + (cn ? ' chon' : '') + '"><input type="checkbox" data-ds="' + k + '" value="khong"' + (cn ? ' checked' : '') + '><span class="h"></span><span>' + L('khongCo') + '</span></label>';
+  }
+  h += '</div><div class="loi">' + L(S.loi[k] || 'chuaChon') + '</div>';
+  if (tuy.khac && chon.indexOf('khac') >= 0) h += '<div class="phu">' + oChu(tuy.khac, 'ghiRo', { bb: true }) + '</div>';
+  return h + '</div>';
+}
+function oChon1(k, ds) {
+  var h = '<div class="chips">';
+  ds.forEach(function (r) {
+    var c = S.F[k] === r[0];
+    h += '<label class="chip tron' + (c ? ' chon' : '') + '"><input type="radio" name="r_' + k + '" data-r="' + k + '" value="' + r[0] + '"' + (c ? ' checked' : '') + '><span class="h"></span><span>' + L(r[1]) + '</span></label>';
+  });
+  return h + '</div>';
+}
+function veKH() {
+  var F = S.F, nam = +homNay().slice(0, 4);
+  var h = '<div class="the"><h2>' + L('s_kh') + '</h2>';
+  h += oChu('hoTen', 'hoTen', { bb: true, max: 100, ac: 'name', goi: 'hoTenGoiY' });
+  h += '<div class="o' + (S.loi.gioiTinh ? ' sai' : '') + '" id="o_gioiTinh"><div class="nhan">' + LB('gioiTinh', true) + '</div>' + oChon1('gioiTinh', [['nam', 'nam'], ['nu', 'nu']]) + '<div class="loi">' + L('chuaChon') + '</div></div>';
+  h += '<div class="o' + (S.loi.ngaySinh ? ' sai' : '') + '" id="o_ngaySinh"><div class="nhan">' + LB('ngaySinh', true) + '</div><div class="ngay3">';
+  h += '<select class="in" data-ns="d" aria-label="day"><option value="">' + E(tx('ngay', 'vi')) + ' / ' + E(tx('ngay', S.nn)) + '</option>';
+  for (var d = 1; d <= 31; d++) h += '<option' + (+F.ns.d === d ? ' selected' : '') + '>' + d + '</option>';
+  h += '</select><select class="in" data-ns="m" aria-label="month"><option value="">' + E(tx('thang', 'vi')) + ' / ' + E(tx('thang', S.nn)) + '</option>';
+  for (var m = 1; m <= 12; m++) h += '<option value="' + m + '"' + (+F.ns.m === m ? ' selected' : '') + '>' + m + '</option>';
+  h += '</select><select class="in" data-ns="y" aria-label="year"><option value="">' + E(tx('nam_', 'vi')) + ' / ' + E(tx('nam_', S.nn)) + '</option>';
+  for (var y = nam; y >= nam - 105; y--) h += '<option' + (+F.ns.y === y ? ' selected' : '') + '>' + y + '</option>';
+  h += '</select></div><div class="loi">' + L(S.loi.ngaySinh || 'chuaChon') + '</div></div>';
+  h += '<div class="o' + (S.loi.quocTich ? ' sai' : '') + '" id="o_quocTich"><label for="i_qt">' + LB('quocTich', true) + '</label><select class="in" id="i_qt"><option value="">' + E(tx('chonQT', 'vi')) + ' / ' + E(tx('chonQT', S.nn)) + '</option>';
+  var ds = QT_DS.map(function (c, i) { return { c: c, v: tenQT(c, 'vi'), e: tenQT(c, S.nn), i: i }; });
+  var dau = ds.slice(0, QT_DAU), sau = ds.slice(QT_DAU).sort(function (a, b) { return a.v.localeCompare(b.v, 'vi'); });
+  function opt(x) { return '<option value="' + x.c + '"' + (F.quocTich === x.c ? ' selected' : '') + '>' + E(x.v) + (x.e !== x.v ? ' · ' + E(x.e) : '') + '</option>'; }
+  h += dau.map(opt).join('') + '<option disabled>──────────</option>' + sau.map(opt).join('') + '</select><div class="loi">' + L('chuaChon') + '</div></div>';
+  if (duoi16()) h += '<div class="bao">' + L('ddDuoi16') + '</div>';
+  h += oChu('sdt', 'sdt', { bb: !duoi16(), kieu: 'tel', max: 25, ac: 'tel', im: 'tel', goi: F.quocTich && F.quocTich !== 'VN' ? 'sdtGoiY' : '' });
+  h += oChu('diaChi', 'diaChi', { bb: true, max: 200, goi: F.quocTich && F.quocTich !== 'VN' ? 'diaChiGoiY' : '' });
+  h += oChu('queQuan', 'queQuan', { max: 100 });
+  var t = tuoi();
+  h += oChu('giayTo', 'giayTo', { bb: t == null || t >= 16, max: 20 });
+  h += oChu('email', 'email', { kieu: 'email', max: 100, ac: 'email' });
+  h += oChu('ngheNghiep', 'ngheNghiep', { max: 100 });
+  h += oChu('luuTru', 'luuTru', { bb: F.quocTich && F.quocTich !== 'VN', max: 100, goi: 'luuTruGoiY' });
+  h += oChu('lyDo', 'lyDo', { bb: true, kieu: 'area', max: 1000 });
+  return h + '</div>';
+}
+function veDD() {
+  var h = '<div class="the"><h2>' + L('s_dd') + '</h2>';
+  h += '<div class="bao' + (duoi16() ? ' do' : '') + '">' + L(duoi16() ? 'ddDuoi16' : 'ddKhongBatBuoc') + '</div>';
+  var bb = duoi16();
+  h += oChu('ddTen', 'ddTen', { bb: bb, max: 100 }) + oChu('ddQuanHe', 'quanHe', { bb: bb, max: 50 }) + oChu('ddSdt', 'ddSdt', { bb: bb, kieu: 'tel', max: 25, im: 'tel' });
+  h += '</div><div class="the">' + oChip('nguon', 'nguon', { nhan: 'nguon', khac: 'nguonKhac' }) + '</div>';
+  return h;
+}
+function veYT1() {
+  var h = '<div class="the"><h2>' + L('s_yt') + '</h2><div class="bao">' + L('ytGoiY') + '</div>';
+  h += oChip('he', 'he', { nhan: 'q1', khac: 'heKhac', khong: true });
+  h += oChip('da', 'da', { nhan: 'q2', khac: 'daKhac', khong: true });
+  if (S.F.gioiTinh === 'nu') {
+    h += oChip('nu', 'nu', { nhan: 'nuTieuDe', khong: true });
+    if (S.F.nu.indexOf('mang_thai') >= 0) h += oChu('thaiTuan', 'thaiTuan', { bb: true, kieu: 'number', im: 'numeric', max: 2 });
+  }
+  return h + '</div>';
+}
+function veYT2() {
+  var F = S.F;
+  var h = '<div class="the">';
+  h += oChip('tt', 'tt', { nhan: 'q3', khac: 'ttKhac', khong: true });
+  if (F.tt.length && F.tt.indexOf('khong') < 0) h += oChu('ttChiTiet', 'q3ct', { kieu: 'area', max: 500 });
+  h += oChip('du', 'du', { nhan: 'q4', khac: 'duKhac', khong: true });
+  if (F.du.length && F.du.indexOf('khong') < 0) h += oChu('duChiTiet', 'q4ct', { bb: true, kieu: 'area', max: 500 });
+  h += '</div><div class="the"><div class="o' + (S.loi.thuoc ? ' sai' : '') + '" id="o_thuoc"><label for="i_thuoc">' + LB('q5', true) + '</label>';
+  h += '<textarea id="i_thuoc" data-k="thuoc" maxlength="1000"' + (F.thuocKhong ? ' disabled' : '') + '>' + E(F.thuoc) + '</textarea>';
+  h += '<div class="chips" style="margin-top:8px"><label class="chip khong' + (F.thuocKhong ? ' chon' : '') + '"><input type="checkbox" id="i_thuocKhong"' + (F.thuocKhong ? ' checked' : '') + '><span class="h"></span><span>' + L('q5khong') + '</span></label></div>';
+  h += '<div class="loi">' + L('chuaDien') + '</div></div>';
+  h += oChip('t6', 't6', { nhan: 't6', khong: true });
+  h += '</div><div class="the"><div class="o' + (S.loi.them ? ' sai' : '') + '" id="o_them"><div class="nhan">' + LB('q6', true) + '</div>' + oChon1('them', [['co', 'co'], ['khong', 'khong']]) + '<div class="loi">' + L('chuaChon') + '</div></div>';
+  if (F.them === 'co') h += oChu('themChiTiet', 'neuCoGhiRo', { bb: true, kieu: 'area', max: 1000 });
+  return h + '</div>';
+}
+function giaTri(k) {
+  var F = S.F, v = F[k];
+  if (Array.isArray(v)) {
+    var nhom = { nguon: 'nguon', he: 'he', da: 'da', nu: 'nu', tt: 'tt', du: 'du', t6: 't6' }[k];
+    return v.map(function (m) {
+      if (m === 'khac') return L('khac').replace('</span>', ': ' + E(F[k + 'Khac']) + '</span>');
+      if (m === 'khong') return L('khongCo');
+      return LD(nhom, m);
+    }).join('<div style="height:6px"></div>');
+  }
+  if (k === 'thuoc' && F.thuocKhong) return L('q5khong');
+  if (k === 'gioiTinh') return v ? L(v) : '';
+  if (k === 'them') return v ? L(v) : '';
+  if (k === 'ngaySinh') return v ? E(v.slice(8) + '/' + v.slice(5, 7) + '/' + v.slice(0, 4)) : '';
+  if (k === 'quocTich') return v ? E(tenQT(v, 'vi')) + (S.nn !== 'vi' ? '<span class="e">' + E(tenQT(v, S.nn)) + '</span>' : '') : '';
+  return E(v);
+}
+function veXem() {
+  var F = S.F;
+  function muc(k, nhan) { var g = giaTri(k); return '<div class="muc"><div class="k">' + L(nhan) + '</div><div>' + (g || '<span class="e">' + E(tx('chuaGhi', S.nn)) + '</span>') + '</div></div>'; }
+  function the(tieu, buoc, ds) {
+    var h = '<div class="the xl"><div class="dauxl"><h2 style="flex:1">' + L(tieu) + '</h2><button class="nut nho" data-sua="' + buoc + '">' + E(tx('sua', 'vi')) + ' / ' + E(tx('sua', S.nn)) + '</button></div>';
+    ds.forEach(function (x) { if (x) h += muc(x[0], x[1]); });
+    return h + '</div>';
+  }
+  var h = '<div class="the"><h1>' + L('xemLai') + '</h1><p class="goi">' + L('xemLaiGoiY') + '</p></div>';
+  h += the('s_kh', 0, [['hoTen', 'hoTen'], ['gioiTinh', 'gioiTinh'], ['ngaySinh', 'ngaySinh'], ['quocTich', 'quocTich'], ['sdt', 'sdt'], ['diaChi', 'diaChi'], ['queQuan', 'queQuan'], ['giayTo', 'giayTo'], ['email', 'email'], ['ngheNghiep', 'ngheNghiep'], ['luuTru', 'luuTru'], ['lyDo', 'lyDo']]);
+  h += the('s_dd', 1, [['ddTen', 'ddTen'], ['ddQuanHe', 'quanHe'], ['ddSdt', 'ddSdt'], ['nguon', 'nguon']]);
+  h += the('s_yt', 2, [['he', 'q1'], ['da', 'q2'], F.gioiTinh === 'nu' ? ['nu', 'nuTieuDe'] : null, F.nu.indexOf('mang_thai') >= 0 ? ['thaiTuan', 'thaiTuan'] : null]);
+  h += the('s_yt', 3, [['tt', 'q3'], F.ttChiTiet ? ['ttChiTiet', 'q3ct'] : null, ['du', 'q4'], F.duChiTiet ? ['duChiTiet', 'q4ct'] : null, ['thuoc', 'q5'], ['t6', 't6'], ['them', 'q6'], F.them === 'co' ? ['themChiTiet', 'neuCoGhiRo'] : null]);
+  h += '<div class="the' + (S.loi.dy ? ' sai' : '') + '" id="o_dy"><h2>' + L('s_dy') + '</h2>';
+  S.td.ds.dy.forEach(function (r) {
+    var c = F.dy.indexOf(r[0]) >= 0;
+    h += '<div class="dy' + (c ? ' chon' : '') + '" data-dy="' + r[0] + '" role="checkbox" aria-checked="' + c + '" tabindex="0"><span class="h"></span><div><span class="v">' + E(r[1][0]) + '</span>' + (S.nn !== 'vi' ? '<span class="e">' + E(r[1][NN.indexOf(S.nn)]) + '</span>' : '') + '</div></div>';
+  });
+  h += '<div class="loi" style="' + (S.loi.dy ? 'display:block' : '') + '">' + L('dyCanDu') + '</div></div>';
+  return h;
+}
+function ngayKyChu(nn) {
+  var h = homNay();
+  return tx('ngayKy', nn).replace('{d}', h.slice(8)).replace('{m}', h.slice(5, 7)).replace('{y}', h.slice(0, 4));
+}
+function canKy() { var t = tuoi(); var d16 = t != null && t < 16; return { khach: !d16 || t >= 7, dd: d16 }; }
+function veKy() {
+  var c = canKy();
+  var h = '<div class="the"><h2>' + L('s_ky') + '</h2><p class="goi" style="margin-top:-4px">' + L('kyHuongDan') + '</p>';
+  h += '<p class="ngaykyl">' + E(ngayKyChu('vi')) + '<br><i>' + E(ngayKyChu(S.nn)) + '</i></p>';
+  if (c.khach && c.dd) h += '<div class="bao">' + L('kyTreEm') + '</div>';
+  function pad(k, nhan, ten) {
+    return '<div class="ky' + (S.loi[k] ? ' sai' : '') + '" id="o_' + k + '"><div class="dong"><div><b>' + L(nhan) + '</b><span class="goi">' + E(ten) + '</span></div><button class="nut nho" data-xoa="' + k + '">' + E(tx('kyLai', 'vi')) + ' / ' + E(tx('kyLai', S.nn)) + '</button></div><div class="khung"><span class="x">×</span><span class="gach"></span><canvas id="cv_' + k + '"></canvas></div><div class="loi">' + L('chuaKy') + '</div></div>';
+  }
+  if (c.khach) h += pad('kyKhach', 'kyKhach', S.F.hoTen);
+  if (c.dd) h += pad('kyDD', 'kyDD', S.F.ddTen + (S.F.ddQuanHe ? ' (' + S.F.ddQuanHe + ')' : ''));
+  if (S.loiGui) h += '<div class="bao do">' + L(S.loiGui) + '</div>';
+  return h + '</div>';
+}
+var KY = {};
+function ganKy() {
+  ['kyKhach', 'kyDD'].forEach(function (k) {
+    var cv = $('cv_' + k);
+    if (!cv) return;
+    var r = cv.getBoundingClientRect(), dpr = Math.max(1, Math.min(3, window.devicePixelRatio || 1));
+    cv.width = Math.round(r.width * dpr); cv.height = Math.round(r.height * dpr);
+    var x = cv.getContext('2d');
+    x.scale(dpr, dpr); x.lineCap = 'round'; x.lineJoin = 'round'; x.strokeStyle = '#0b1f5c'; x.lineWidth = 2.6;
+    var st = KY[k] || { net: [], diem: 0 };
+    KY[k] = st;
+    function ve1(n) { x.beginPath(); n.forEach(function (p, i) { if (i) x.lineTo(p[0], p[1]); else x.moveTo(p[0], p[1]); }); if (n.length === 1) x.lineTo(n[0][0] + .1, n[0][1] + .1); x.stroke(); }
+    st.net.forEach(ve1);
+    var dang = null;
+    function diem(e) { var b = cv.getBoundingClientRect(); return [e.clientX - b.left, e.clientY - b.top]; }
+    cv.onpointerdown = function (e) { e.preventDefault(); cv.setPointerCapture(e.pointerId); dang = [diem(e)]; st.net.push(dang); ve1(dang); };
+    cv.onpointermove = function (e) { if (!dang) return; e.preventDefault(); var p = diem(e); var q = dang[dang.length - 1]; dang.push(p); st.diem++; x.beginPath(); x.moveTo(q[0], q[1]); x.lineTo(p[0], p[1]); x.stroke(); };
+    cv.onpointerup = cv.onpointercancel = function () { if (dang) { dang = null; delete S.loi[k]; var o = $('o_' + k); if (o) o.classList.remove('sai'); } };
+  });
+  Array.prototype.forEach.call(document.querySelectorAll('[data-xoa]'), function (b) {
+    b.onclick = function () { var k = b.getAttribute('data-xoa'); KY[k] = { net: [], diem: 0 }; var cv = $('cv_' + k); cv.getContext('2d').clearRect(0, 0, cv.width, cv.height); };
+  });
+}
+function anhKy(k) {
+  var st = KY[k];
+  if (!st || st.diem < 8) return '';
+  var minX = 1e9, minY = 1e9, maxX = -1e9, maxY = -1e9;
+  st.net.forEach(function (n) { n.forEach(function (p) { minX = Math.min(minX, p[0]); minY = Math.min(minY, p[1]); maxX = Math.max(maxX, p[0]); maxY = Math.max(maxY, p[1]); }); });
+  if (maxX - minX < 25 && maxY - minY < 25) return '';
+  var pad = 12, w = maxX - minX + pad * 2, h = maxY - minY + pad * 2, tl = Math.min(1, 600 / w, 240 / h);
+  var cv = document.createElement('canvas');
+  cv.width = Math.ceil(w * tl); cv.height = Math.ceil(h * tl);
+  var x = cv.getContext('2d');
+  x.fillStyle = '#fff'; x.fillRect(0, 0, cv.width, cv.height);
+  x.scale(tl, tl); x.translate(pad - minX, pad - minY);
+  x.lineCap = 'round'; x.lineJoin = 'round'; x.strokeStyle = '#0b1f5c'; x.lineWidth = 2.6;
+  st.net.forEach(function (n) { x.beginPath(); n.forEach(function (p, i) { if (i) x.lineTo(p[0], p[1]); else x.moveTo(p[0], p[1]); }); if (n.length === 1) x.lineTo(n[0][0] + .1, n[0][1] + .1); x.stroke(); });
+  return cv.toDataURL('image/png');
+}
+function ganSuKien() {
+  Array.prototype.forEach.call(document.querySelectorAll('[data-k]'), function (el) {
+    el.oninput = function () {
+      var k = el.getAttribute('data-k');
+      S.F[k] = k === 'thaiTuan' ? el.value.replace(/\D/g, '').slice(0, 2) : el.value;
+      if (S.loi[k]) { delete S.loi[k]; var o = $('o_' + k); if (o) o.classList.remove('sai'); }
+      luuNhap();
+    };
+  });
+  Array.prototype.forEach.call(document.querySelectorAll('[data-ds]'), function (el) {
+    el.onchange = function () {
+      var k = el.getAttribute('data-ds'), v = el.value, ds = S.F[k];
+      var i = ds.indexOf(v);
+      if (el.checked && i < 0) {
+        if (v === 'khong') ds.length = 0;
+        else { var j = ds.indexOf('khong'); if (j >= 0) ds.splice(j, 1); }
+        ds.push(v);
+      } else if (!el.checked && i >= 0) ds.splice(i, 1);
+      delete S.loi[k];
+      giuCuon(ve);
+      luuNhap();
+    };
+  });
+  Array.prototype.forEach.call(document.querySelectorAll('[data-r]'), function (el) {
+    el.onchange = function () { var k = el.getAttribute('data-r'); S.F[k] = el.value; delete S.loi[k]; if (k === 'gioiTinh' && el.value === 'nam') { S.F.nu = []; S.F.thaiTuan = ''; } giuCuon(ve); luuNhap(); };
+  });
+  Array.prototype.forEach.call(document.querySelectorAll('[data-ns]'), function (el) {
+    el.onchange = function () {
+      S.F.ns[el.getAttribute('data-ns')] = el.value;
+      var n = S.F.ns;
+      S.F.ngaySinh = n.d && n.m && n.y ? n.y + '-' + ('0' + n.m).slice(-2) + '-' + ('0' + n.d).slice(-2) : '';
+      delete S.loi.ngaySinh;
+      giuCuon(ve);
+      luuNhap();
+    };
+  });
+  var qt = $('i_qt');
+  if (qt) qt.onchange = function () { S.F.quocTich = qt.value; S.F.tenQT = qt.value ? tenQT(qt.value, 'vi') : ''; delete S.loi.quocTich; chonNN(); veNN(); giuCuon(ve); luuNhap(); };
+  var tk = $('i_thuocKhong');
+  if (tk) tk.onchange = function () { S.F.thuocKhong = tk.checked; if (tk.checked) S.F.thuoc = ''; delete S.loi.thuoc; giuCuon(ve); luuNhap(); };
+  Array.prototype.forEach.call(document.querySelectorAll('[data-dy]'), function (el) {
+    function bat() { var v = el.getAttribute('data-dy'), i = S.F.dy.indexOf(v); if (i >= 0) S.F.dy.splice(i, 1); else S.F.dy.push(v); delete S.loi.dy; giuCuon(ve); luuNhap(); }
+    el.onclick = bat;
+    el.onkeydown = function (e) { if (e.key === ' ' || e.key === 'Enter') { e.preventDefault(); bat(); } };
+  });
+  Array.prototype.forEach.call(document.querySelectorAll('[data-sua]'), function (el) {
+    el.onclick = function () { S.buoc = +el.getAttribute('data-sua'); S.loi = {}; ve(); window.scrollTo(0, 0); };
+  });
+}
+function giuCuon(fn) { var y = window.scrollY; fn(); window.scrollTo(0, y); }
+function kiem(buoc) {
+  var F = S.F, l = {}, t = tuoi(), d16 = t != null && t < 16;
+  function can(k) { if (!String(F[k] || '').trim()) l[k] = 'chuaDien'; }
+  function canDS(k) { if (!F[k].length) l[k] = 'chuaChon'; if (F[k].indexOf('khac') >= 0 && !String(F[k + 'Khac'] || '').trim()) l[k + 'Khac'] = 'chuaDien'; }
+  if (buoc === 'kh') {
+    can('hoTen'); if (!F.gioiTinh) l.gioiTinh = 'chuaChon';
+    if (!F.ngaySinh) l.ngaySinh = 'chuaChon';
+    else { var dt = new Date(F.ngaySinh + 'T00:00:00Z'); if (isNaN(dt) || dt.toISOString().slice(0, 10) !== F.ngaySinh || F.ngaySinh > homNay()) l.ngaySinh = 'khongHop'; }
+    if (!F.quocTich) l.quocTich = 'chuaChon';
+    if (F.sdt.trim() && !sdtHop(F.sdt)) l.sdt = 'khongHop'; else if (!d16) can('sdt');
+    can('diaChi');
+    if (t == null || t >= 16) can('giayTo');
+    if (F.giayTo.trim() && !/^[A-Za-z0-9]{5,20}$/.test(F.giayTo.replace(/\s+/g, ''))) l.giayTo = 'khongHop';
+    if (F.email.trim() && !/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(F.email.trim())) l.email = 'khongHop';
+    if (F.quocTich && F.quocTich !== 'VN') can('luuTru');
+    can('lyDo');
+  } else if (buoc === 'dd') {
+    if (d16) { can('ddTen'); can('ddQuanHe'); can('ddSdt'); if (!F.sdt.trim() && !F.ddSdt.trim()) l.ddSdt = 'chuaDien'; }
+    if (F.ddSdt.trim() && !sdtHop(F.ddSdt)) l.ddSdt = 'khongHop';
+    canDS('nguon');
+  } else if (buoc === 'yt1') {
+    canDS('he'); canDS('da');
+    if (F.gioiTinh === 'nu') { if (!F.nu.length) l.nu = 'chuaChon'; if (F.nu.indexOf('mang_thai') >= 0) { var w = +F.thaiTuan; if (!(w >= 1 && w <= 42)) l.thaiTuan = F.thaiTuan ? 'khongHop' : 'chuaDien'; } }
+  } else if (buoc === 'yt2') {
+    canDS('tt'); canDS('du'); canDS('t6');
+    if (F.du.length && F.du.indexOf('khong') < 0) can('duChiTiet');
+    if (!F.thuocKhong) can('thuoc');
+    if (!F.them) l.them = 'chuaChon'; else if (F.them === 'co') can('themChiTiet');
+  } else if (buoc === 'xem') {
+    if (F.dy.length !== 3) l.dy = 'dyCanDu';
+  }
+  return l;
+}
+function tiep() {
+  var b = BUOC[S.buoc];
+  if (b === 'ky') return guiPhieu();
+  var l = kiem(b);
+  S.loi = l;
+  if (Object.keys(l).length) { ve(); var dau = document.querySelector('.sai'); if (dau) dau.scrollIntoView({ behavior: 'smooth', block: 'center' }); return; }
+  if (b === 'xem') {
+    for (var i = 0; i < 4; i++) { var li = kiem(BUOC[i]); if (Object.keys(li).length) { S.loi = li; S.buoc = i; ve(); window.scrollTo(0, 0); return; } }
+  }
+  S.buoc++;
+  luuNhap();
+  ve();
+  window.scrollTo(0, 0);
+}
+var TRUONG_BUOC = { hoTen: 0, gioiTinh: 0, ngaySinh: 0, quocTich: 0, tenQT: 0, sdt: 0, diaChi: 0, queQuan: 0, giayTo: 0, email: 0, ngheNghiep: 0, luuTru: 0, lyDo: 0,
+  ddTen: 1, ddQuanHe: 1, ddSdt: 1, nguon: 1, nguonKhac: 1, he: 2, heKhac: 2, da: 2, daKhac: 2, nu: 2, thaiTuan: 2,
+  tt: 3, ttKhac: 3, ttChiTiet: 3, du: 3, duKhac: 3, duChiTiet: 3, thuoc: 3, t6: 3, them: 3, themChiTiet: 3, dy: 4, kyKhach: 5, kyDD: 5 };
+function guiPhieu() {
+  if (S.dangGui) return;
+  var c = canKy(), ky = {}, l = {};
+  if (c.khach) { ky.khach = anhKy('kyKhach'); if (!ky.khach) l.kyKhach = 'chuaKy'; }
+  if (c.dd) { ky.dd = anhKy('kyDD'); if (!ky.dd) l.kyDD = 'chuaKy'; }
+  S.loi = l; S.loiGui = '';
+  if (Object.keys(l).length) { ve(); return; }
+  var F = S.F, f = {};
+  Object.keys(F).forEach(function (k) { if (k !== 'ns') f[k] = F[k]; });
+  f.giayTo = F.giayTo.replace(/\s+/g, '').toUpperCase();
+  f.thaiTuan = F.nu.indexOf('mang_thai') >= 0 ? +F.thaiTuan : '';
+  S.dangGui = true; veChan();
+  goiMayChu({ a: 'gui', t: S.t, id: S.id, nn: S.nn, nnNguon: S.nnNguon, tg: Date.now() - S.bd, hp: $('hp').value, mau: S.mau, f: f, ky: ky })
+    .then(function (r) {
+      S.dangGui = false;
+      if (r && r.ok) { S.ma = r.ma; xoaNhap(); veXong(); return; }
+      var loi = r && r.loi;
+      var map = { qr: 'e_qr', nhieu: 'e_nhieu', sdt_nhieu: 'e_sdtNhieu', tam_dung: 'e_tamDung', mau: 'e_mau', du_lieu: 'e_dl' };
+      S.loiGui = map[loi] || 'e_mayChu';
+      if (loi === 'du_lieu' && r.truong && r.truong.length) {
+        var bmin = 5; S.loi = {};
+        r.truong.forEach(function (k) { S.loi[k] = /^ky/.test(k) ? 'chuaKy' : 'khongHop'; if (TRUONG_BUOC[k] != null) bmin = Math.min(bmin, TRUONG_BUOC[k]); });
+        if (bmin < 5) { S.buoc = bmin; ve(); window.scrollTo(0, 0); var o = document.querySelector('.sai'); if (o) o.scrollIntoView({ block: 'center' }); return; }
+      }
+      ve();
+    })
+    .catch(function () { S.dangGui = false; S.loiGui = 'e_mang'; ve(); });
+}
+function veXong() {
+  $('tien').style.width = '100%';
+  $('chan').hidden = true;
+  $('noi').innerHTML = '<div class="the giua"><img class="logo-to" src="' + LOGO + '" alt=""><h1>' + L('xong1') + '</h1><p style="margin:14px 0 0">' + L('xong2') + '</p><div class="ma" id="maKB">' + E(S.ma) + '</div><p style="font-weight:600;margin:0">' + E(S.F.hoTen) + '</p><p class="goi" style="margin-top:14px">' + L('xong3') + '</p></div>';
+  window.scrollTo(0, 0);
+}
+function veChao() {
+  S.buoc = -1;
+  $('chan').hidden = true;
+  var nhap = docNhap();
+  var h = '<div class="the giua"><img class="logo-to" src="' + LOGO + '" alt="Vihan Derma"><h1>' + L('tieuDe') + '</h1><p style="margin:14px 0 6px;font-weight:600">' + L('chao1') + '</p><p class="goi">' + L('chao2') + '</p></div>';
+  h += '<div class="the"><p class="goi" style="margin:0">' + L('chao3') + '</p></div>';
+  if (nhap) h += '<div class="the"><p style="margin:0 0 10px">' + L('nhapDo') + '</p><div style="display:flex;gap:10px"><button class="nut chinh" id="nTiepNhap">' + L('nhapTiep') + '</button><button class="nut phu2" id="nMoi">' + L('nhapMoi') + '</button></div></div>';
+  else h += '<button class="nut chinh" id="nBatDau" style="width:100%">' + L('batDau') + '</button>';
+  $('noi').innerHTML = h;
+  $('tien').style.width = '0';
+  if (nhap) {
+    $('nTiepNhap').onclick = function () { S.F = nhap.F; S.buoc = Math.min(nhap.buoc, 4); S.id = nhap.id; S.bd = nhap.bd; S.nnTay = nhap.nnTay; if (nhap.nnTay) { S.nn = nhap.nn; S.nnNguon = 'tay'; } else chonNN(); veNN(); ve(); };
+    $('nMoi').onclick = function () { xoaNhap(); batDau(); };
+  } else $('nBatDau').onclick = batDau;
+}
+function batDau() { S.F = moiF(); S.id = maNgauNhien(); S.bd = Date.now(); S.buoc = 0; S.loi = {}; KY = {}; luuNhap(); ve(); window.scrollTo(0, 0); }
+function veLoiLon(k) {
+  S.loiLon = k;
+  $('chan').hidden = true;
+  $('noi').innerHTML = '<div class="the giua"><img class="logo-to" src="' + LOGO + '" alt=""><div class="bao do" style="text-align:left">' + (S.td ? L(k) : E(k)) + '</div><button class="nut phu2" style="width:100%" onclick="location.reload()">↻</button></div>';
+}
+function khoiDong() {
+  if (KB_MAY_CHU.indexOf('https://') !== 0) {
+    $('noi').innerHTML = '<div class="the giua"><div class="bao do" style="text-align:left">Trang khai báo chưa được cài đặt. Vui lòng báo lễ tân.<span class="e">This page is not set up yet. Please tell the reception desk.</span></div></div>';
+    return;
+  }
+  var q = new URLSearchParams(location.search);
+  S.t = q.get('t') || '';
+  goiMayChu({ a: 'mau', t: S.t }).then(function (r) {
+    if (!r || !r.ok || !r.tuDien) throw new Error('mau');
+    S.td = r.tuDien; S.mau = r.mau; S.qtNN = r.qtNN || {};
+    chonNN();
+    veNN();
+    if (!r.mo) return veLoiLon('e_tamDung');
+    if (!r.qr) return veLoiLon('e_qr');
+    veChao();
+  }).catch(function () {
+    $('noi').innerHTML = '<div class="the giua"><div class="bao do" style="text-align:left">Không kết nối được tới phòng khám. Kiểm tra mạng rồi thử lại.<span class="e">Could not reach the clinic. Check your connection and try again.</span></div><button class="nut chinh" style="width:100%" onclick="location.reload()">Thử lại · Retry</button></div>';
+  });
+}
+window.addEventListener('beforeunload', luuNhap);
+khoiDong();
+</script>
+</body>
+</html>
